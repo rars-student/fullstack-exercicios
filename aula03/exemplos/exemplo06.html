@@ -1,0 +1,20 @@
+<script>
+    let nota01 = prompt("Digite a primeira nota: ");
+    let nota02 = prompt("Digite a primeira nota: ");
+    let nota03 = prompt("Digite a primeira nota: ");
+    let nota04 = prompt("Digite a primeira nota: ");
+
+    let media = (
+        parseFloat(nota01) +
+        parseFloat(nota02) +
+        parseFloat(nota03) +
+        parseFloat(nota04)) / 4;
+
+    if (media < 7) {
+        document.write("<h1>A media do aluno foi " + media + ".</h1><br />");
+        document.write("<h1>O aluno foi reprovado</h1>");
+    } else {
+        document.write("<h1>A media do aluno foi " + media + "</h1>.<br />");
+        document.write("<h1>O aluno foi aprovado</h1>");
+    }
+</script>
