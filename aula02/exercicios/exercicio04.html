@@ -1,0 +1,18 @@
+<script>
+  let qtdMacas = parseInt(prompt("Quantas maçãs você quer comprar: "));
+  let precoMaca = 0;
+
+  if (qtdMacas > 0 && qtdMacas < 12) {
+    precoMaca = 1.3;
+  } else {
+    precoMaca = 1.0;
+  }
+
+  let totalMacas = maca * qtdMacas;
+
+  document.write(`<h1>=========================================</h1>`);
+  document.write(
+    `<h1>Total da compra: R$ ${totalMacas.toFixed(2)} 🍎🍎🍏</h1>`
+  );
+  document.write(`<h1>=========================================</h1>`);
+</script>

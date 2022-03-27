@@ -1,0 +1,21 @@
+<script>
+  const data = new Date();
+  const anoAtual = data.getFullYear();
+  const anoNascimento = parseInt(prompt("Qual o ano de seu nascimento? "));
+
+  let idade = anoAtual - anoNascimento;
+
+  if (idade >= 16) {
+    document.write(`<h1>=========================================</h1>`);
+    document.write(
+      `<h1>Você tem ${idade} anos de idade e pode votar. 👏🏼👏🏼👏🏼</h1>`
+    );
+    document.write(`<h1>=========================================</h1>`);
+  } else {
+    document.write(`<h1>=========================================</h1>`);
+    document.write(
+      `<h1>Você tem ${idade} anos de idade e NÃO pode votar. 😕😢</h1>`
+    );
+    document.write(`<h1>=========================================</h1>`);
+  }
+</script>
