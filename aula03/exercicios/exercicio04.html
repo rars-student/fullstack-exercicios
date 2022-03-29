@@ -3,15 +3,16 @@
   Leia 5 valores reais e calcule seu somatório utilizando a instrução while.
   */
 
-  let i = 0;
+  let i = 1;
 
-  let valorTotal = 0;
+  let valores = [];
 
   while (i <= 5) {
-    let valor1 =
-    valorTotal += valor;
-  }
+    valores[i] = parseFloat(prompt("Digite o valor: " + i));
 
-  document.write(` ${ variavel }`);
+    document.write(`<h2>O Valor digitado foi: ${valores[i]}<h2/>`);
+
+    i++;
+  }
   // OUTPUT
 </script>
