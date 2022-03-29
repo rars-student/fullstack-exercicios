@@ -1,0 +1,16 @@
+<script>
+  /*
+  Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.
+  */
+
+  // INPUT
+  const salarioMes = parseFloat(prompt("Qual o seu salário mensal?"));
+  const percentualReajuste = parseFloat(
+    prompt("Qual o percentual de reajuste?")
+  );
+
+  let novoSalario =+ (salarioMes * percentualReajuste) / 100;
+
+  document.write(` ${novoSalario}`);
+  // OUTPUT
+</script>
