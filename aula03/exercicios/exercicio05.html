@@ -4,11 +4,19 @@
 
   */
 
-  // INPUT
-  let variavel = parseFloat(prompt(""));
+  //Array de valores
+  let valores = [];
+  let i = 1;
+  let valorTotal = 0;
 
-  // CODE
+  //Laço que percorre o array de valores
+  do {
+    valores[i] = parseFloat(prompt(`Digite o valor ${i}: `));
+    valorTotal += valores[i];
+    i++;
+  } while (i <= 5);
 
-  document.write(` ${ variavel }`);
+  //Output
+  document.write(`<h2>A soma dos valores digitados foram: ${valorTotal}<h2/>`);
   // OUTPUT
 </script>

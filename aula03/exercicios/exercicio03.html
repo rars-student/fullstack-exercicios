@@ -3,7 +3,6 @@
   Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius (baseado na fórmula abaixo):
 
   C/5 = (F - 32)/9
-  °C = (°F − 32) ÷ 1.8
 
   Observação: Para testar se a sua resposta está correta saiba que 100ºC = 212F
   */
@@ -12,12 +11,10 @@
   let fahrenheit = parseFloat(
     prompt("Qual o valor da temperatura em Fahrenheit")
   );
-  let celsius = ((fahrenheit - 32) / 9)*5;
-
-  //(°F − 32) ÷ 1.8
+  let celsius = 5 * (fahrenheit - 32) / 9;
 
   // CODE
 
-  document.write(`<h1> ${celsius} <h2/>`);
+  document.write(`<h1>Valor em Celsius: ${celsius}° <h2/>`);
   // OUTPUT
 </script>

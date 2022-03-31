@@ -5,10 +5,13 @@
   */
 
   // INPUT
-  let variavel = parseFloat(prompt(""));
+  let valores = [13, 23, 12, 45, 22, 48, 66, 100];
 
-  // CODE
+  for (let i = 0; i <= valores.length; i++) {
+    if ((valores[i] % 2) === 0) {
+      document.write(`<h2>${valores[i]} É PAR</h2>`);
+    }
+  }
 
-  document.write(` ${ variavel }`);
   // OUTPUT
 </script>
