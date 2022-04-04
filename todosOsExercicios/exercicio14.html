@@ -1,0 +1,37 @@
+<script>
+  /*
+    14.	Implemente um programa tomador de decisão que considera as seguintes opções para determinar se o usuário usará a fila preferencial ou a fila comum.
+
+    O programa recebe como entrada a Idade, Sexo e a condição especial do usuário, se houver.
+
+    Exemplo de entrada: 22, mulher, grávida
+    Saída esperada: Fila preferencial
+
+  */
+
+  const idade = parseInt(prompt("Digite sua idade: "));
+  const sexo = prompt("Digite seu sexo: ");
+  const condicao = prompt(
+    "Tem alguma sua condição especial? Caso tenha, diga qual(gestante ou deficiente)"
+  );
+
+  // if (
+  //   idade >= 60 ||
+  //   (condicao === "feminino" && condicao === "gestante") ||
+  //   condicao === "deficiente"
+  // ) {
+  //   document.write(`FILA PREFERENCIAL`);
+  // } else {
+  //   document.write(`FILA NORMAL`);
+  // }
+
+  if (idade >= 60) {
+    document.write(`VOCÊ É IDOSO, FILA PREFERENCIAL`);
+  } else if (condicao === "deficiente") {
+    document.write(`VOCÊ É DEFICIENTE, FILA PREFERENCIAL`);
+  } else if (sexo === "feminino" && condicao === "gestante") {
+    document.write(`VOCÊ É GESTANTE, FILA PREFERENCIAL`);
+  } else {
+    document.write(`VOCÊ NÃO TEM NENHUMA CONDIÇÃO ESPECIAL, FILA NORMAL`);
+  }
+</script>
