@@ -1,0 +1,21 @@
+<script>
+  /*
+    16.	Escreva um programa para verificar se um triângulo pode ser formado pelo valor fornecido para os ângulos.
+  */
+
+  const l1 = parseFloat(prompt("Digite um valor para o lado 01:"));
+  const l2 = parseFloat(prompt("Digite um valor para o lado 02:"));
+  const l3 = parseFloat(prompt("Digite um valor para o lado 03:"));
+
+  if (l1 < l2 + l3 && l2 < l1 + l3 && l3 < l1 + l2) {
+    if (l1 === l2 && l1 === l3) {
+      document.write("Triangulo Equilátero");
+    } else if (l1 === l2 || l1 === l3 || l2 === l3) {
+      document.write("Triangulo Isosceles");
+    } else {
+      document.write("Triangulo Escaleno");
+    }
+  } else {
+    document.write("Não é triângulo");
+  }
+</script>
