@@ -1,0 +1,33 @@
+<script>
+  // 21.Faça um programa com uma função chamada calculaINSS. A função possui um parâmetro formal: salário. A função deve retornar o salário com o INSS descontado.
+
+  // Obs: Existem faixas de desconto do INSS, por exemplo, quem ganha um salário mínimo tem o valor de 7,5% descontado, pesquisar as outras faixas.
+
+  // Entrada -> calculaINSS(1.212)
+  // Saída esperada -> R$ 1.121.10
+
+  // 7,5% para quem ganha até um salário mínimo (R$ 1.212)
+  // 9% para quem ganha entre R$ 1.212,01 e R$ 2.427,35
+  // 12% para quem ganha entre R$ 2.427,36 e R$ 3.641,03
+  // 14% para quem ganha entre R$ 3.641,04 e R$ 7.087,22
+
+  const salario = parseFloat(prompt("Digite seu salario: "));
+
+  const calcularINSS = (sal) => {
+    if (sal <= 1212) {
+      return (sal - sal * (7.5 / 100)).toFixed(2);
+    } else if (sal > 1212 && sal <= 2427.35) {
+      return (sal - sal * (9 / 100)).toFixed(2);
+    } else if (sal > 2427.35 && sal <= 3641.03) {
+      return (sal - sal * (12 / 100)).toFixed(2);
+    } else if (sal > 3641.03 <= 7087.22) {
+      return (sal - sal * (14 / 100)).toFixed(2);
+    } else {
+      return "Valor inválido";
+    }
+  };
+
+  const calculoINSS = calcularINSS(salario);
+
+  document.write(`<h1>SALÁRIO DESCONTADO: ${calculoINSS}✌🏻✌🏻✌🏻✌🏻</h1>`);
+</script>
