@@ -6,35 +6,36 @@
   const num3 = parseFloat(prompt("Digite o terceiro número:"));
 
   function verificarMaiorOuMenor(n1, n2, n3) {
-    // if (n1 > n2) {
-    //   if (n1 > n3) {
-    //     exibirMaior(n1);
-    //   }
-    // } else if (n2 > n1) {
-    //   if (n2 > n3) {
-    //     return `O número maior é: ${n2}`;
-    //   }
-    // } else if (n3 > n1) {
-    //   if (n3 > n2) {
-    //     return `O número maior é: ${n3}`;
-    //   }
-    // }
-
-
-    if((n1 > n2 && n1 > n3) || (n2 > n1 && n2 > n3) || (n3 > n1 && n3 > n2)) {
-
-    } else if ((n1 < n2 && n1 < n3) || (n2 < n1 && n2 < n3) || (n3 < n1 && n3 < n2)) {
-
+    if ((n1 > n2 && n1 > n3) || (n2 > n1 && n2 > n3) || (n3 > n1 && n3 > n2)) {
+      exibirMaior(n1, n2, n3);
+    } else if (
+      (n1 < n2 && n1 < n3) ||
+      (n2 < n1 && n2 < n3) ||
+      (n3 < n1 && n3 < n2)
+    ) {
+      exibirMenor(n1, n2, n3);
     }
   }
 
-  function exibirMaior(valor) {
-    return `O número maior é: ${valor}`;
+  function exibirMaior(n1, n2, n3) {
+    if (n1 > n2 && n1 > n3) {
+      return `O número maior é: ${n1}`;
+    } else if (n2 > n1 && n2 > n3) {
+      return `O número maior é: ${n2}`;
+    } else if (n3 > n1 && n3 > n2) {
+      return `O número maior é: ${n3}`;
+    }
   }
 
-  function exibirMenor(valor) {
-    return `O número menor é: ${valor}`
+  function exibirMenor(n1, n2, n3) {
+    if (n1 < n2 && n1 < n3) {
+      return `O número menor é: ${n1}`;
+    } else if (n2 < n1 && n2 < n3) {
+      return `O número menor é: ${n2}`;
+    } else if (n3 < n1 && n3 < n2) {
+      return `O número menor é: ${n3}`;
+    }
   }
 
-  document.write(``);
+  document.write(`<h1>${verificarMaiorOuMenor(num1, num2, num3)}</h1>`);
 </script>

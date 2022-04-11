@@ -1,0 +1,38 @@
+<style>
+  #primo {
+    color: rgb(1, 194, 1);
+  }
+
+  #nao-primo {
+    color: red;
+  }
+</style>
+<script>
+  // 23.	Crie uma função que recebe um inteiro positivo e teste para saber se ele é primo ou não.
+  // Faça uma função que recebe um inteiro n e mostra todos os primos, de 1 até n.
+
+  // Entrada -> veririficaNumeroPrimo(3), imprimeNumerosPrimosAteN(13)
+  // Saída esperada -> “É número primo”, “2, 3, 5, 7, 11, 13.
+
+  const valor = parseInt(prompt("Digite um valor limite: "));
+
+  const verificarSeEPrimo = (value) => {
+    let valores = [];
+    for (var i = 0; i <= value; i++) {
+      if (ePrimo(i)) {
+        valores.push(i);
+      }
+    }
+    return valores;
+  };
+
+  const ePrimo = (value) => {
+    for (let i = 2; i < value; i++)
+      if (value % i === 0) {
+        return false;
+      }
+    return value > 1;
+  };
+
+  document.write(`<h1>${verificarSeEPrimo(valor)}</h1>`);
+</script>
