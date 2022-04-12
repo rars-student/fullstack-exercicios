@@ -1,0 +1,17 @@
+<script>
+  const pessoa = {
+    nome: prompt("Digite seu nome: "),
+    cpf: prompt("Digite seu cpf: "),
+    idade: prompt("Digite seu idade: "),
+    sexo: prompt("Digite seu sexo: "),
+  };
+
+  const exibirPessoa = (objeto) => {
+    document.write(`<h1>Nome: ${objeto.nome}</h1>`);
+    document.write(`<h1>CPF: ${objeto.cpf}</h1>`);
+    document.write(`<h1>Idade: ${objeto.idade}</h1>`);
+    document.write(`<h1>Sexo: ${objeto.sexo}</h1>`);
+  };
+
+  exibirPessoa(pessoa);
+</script>
