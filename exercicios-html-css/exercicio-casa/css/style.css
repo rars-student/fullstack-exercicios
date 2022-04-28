@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'ubuntu', sans-serif;
+  color: #212121;
+}
+
 body {
-  background-color: purple;
-  font: normal 15pt Arial;
+  background: #0063C4 url("../assets/paisagem.jpg") no-repeat;
+  background-size: cover;
 }
 
 header {
-  color: white;
-  text-align: center;
+  display: none;
+  /* color: white;
+  text-align: center; */
 }
 
 section {
@@ -14,6 +26,7 @@ section {
   padding: 15px;
   width: 500px;
   margin: auto;
+  margin-top: 40px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
 }
 
