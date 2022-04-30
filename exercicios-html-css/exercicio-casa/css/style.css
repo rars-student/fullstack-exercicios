@@ -19,7 +19,7 @@ body {
   background: #0063c4 url("../assets/paisagem.jpg") no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -31,23 +31,27 @@ header {
 }
 
 section.card-perfil {
-  background-color: #00000080;
+  background-color: #000000a8;
   border-radius: 10px;
   padding: 15px;
   width: 350px;
   /* margin: auto; */
   margin-top: 40px;
-  box-shadow: 5px 5px 10px #00000060;
+  box-shadow: 5px 5px 10px #000000b6;
 }
 
 section.card-perfil {
   display: block;
-  padding: 10px 0px;
+  padding: 80px 0px;
+}
+
+section.card-perfil div.row {
+  text-align: center;
 }
 
 section.card-perfil img#img-perfil {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border: 2px solid #fff;
   border-radius: 50%;
 }
@@ -64,12 +68,12 @@ section.card-perfil p#profissao {
   font-size: 1em;
   font-style: italic;
   font-weight: normal;
-  color: #ffbc9d;
+  color: #fffb00;
 }
 
 .card-perfil .fab {
-  margin: 10px;
-  font-size: 1.2em;
+  margin: 35px 5px;
+  font-size: 1.4em;
   color: #bdbdbd;
   transition-duration: 0.3s;
 }
@@ -86,11 +90,19 @@ section.card-perfil p#profissao {
   border: 1px solid #bdbdbd;
   color: #bdbdbd;
   text-decoration: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
 }
 
-footer {
-  /* color: white;
-  text-align: center;
-  font-style: italic; */
-  display: none;
+.card-perfil .btn-mais:hover {
+  background-color: #ff9900;
+  color: #000;
+  border: 2px solid #FFF;
+}
+
+footer#footer p{
+  color: #FFF;
+  font-style: italic;
+  margin-top: 100px;
 }
