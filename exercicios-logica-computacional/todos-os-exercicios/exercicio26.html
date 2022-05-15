@@ -1,41 +1,20 @@
 <script>
-  // Faça um programa que recebe três números do usuário, e identifica o maior através de uma função e o menor número através de outra função.
+  /*
+Crie uma variável chamada casa que execute as seguintes operações:
+Atribua um objeto a variável com as propriedades:
+  quartos = 2
+  tipo = “casa”
+  endereco = “rua teste 123 – ZS”
+Exiba no console a seguinte frase (usando TODOS as propriedades): Casa com 2 quartos localizada na rua teste 123 – ZS.
+*/
 
-  const num1 = parseFloat(prompt("Digite o primeiro número:"));
-  const num2 = parseFloat(prompt("Digite o segundo número:"));
-  const num3 = parseFloat(prompt("Digite o terceiro número:"));
+  let casa = {
+    quartos: 2,
+    tipo: "Casa",
+    endereco: "rua teste 123 - ZS",
+  };
 
-  function verificarMaiorOuMenor(n1, n2, n3) {
-    if ((n1 > n2 && n1 > n3) || (n2 > n1 && n2 > n3) || (n3 > n1 && n3 > n2)) {
-      exibirMaior(n1, n2, n3);
-    } else if (
-      (n1 < n2 && n1 < n3) ||
-      (n2 < n1 && n2 < n3) ||
-      (n3 < n1 && n3 < n2)
-    ) {
-      exibirMenor(n1, n2, n3);
-    }
-  }
-
-  function exibirMaior(n1, n2, n3) {
-    if (n1 > n2 && n1 > n3) {
-      return `O número maior é: ${n1}`;
-    } else if (n2 > n1 && n2 > n3) {
-      return `O número maior é: ${n2}`;
-    } else if (n3 > n1 && n3 > n2) {
-      return `O número maior é: ${n3}`;
-    }
-  }
-
-  function exibirMenor(n1, n2, n3) {
-    if (n1 < n2 && n1 < n3) {
-      return `O número menor é: ${n1}`;
-    } else if (n2 < n1 && n2 < n3) {
-      return `O número menor é: ${n2}`;
-    } else if (n3 < n1 && n3 < n2) {
-      return `O número menor é: ${n3}`;
-    }
-  }
-
-  document.write(`<h1>${verificarMaiorOuMenor(num1, num2, num3)}</h1>`);
+  console.log(
+    `${casa.tipo} com ${casa.quartos} localizada na rua ${casa.endereco}`
+  );
 </script>

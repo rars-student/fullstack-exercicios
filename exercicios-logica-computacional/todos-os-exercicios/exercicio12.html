@@ -1,16 +1,31 @@
 <script>
   /*
-  Observação: Utilizar este array -> [13,23,12,45,22,48,66,100]
-  */
+  Escreva um programa para verificar se um caractere é uma vogal ou consoante.
 
-  // INPUT
-  let valores = [13, 23, 12, 45, 22, 48, 66, 100];
+  switch(nome) {
 
-  for (let i = 0; i <= valores.length; i++) {
-    if (valores[i] % 2 === 0) {
-      document.write(`<h2>${valores[i]} É PAR</h2>`);
-    }
+  case "Matheus":
+  case "João":
+  case "Maria":
+      console.log("Olá pessoa");
+    break;
+  default:
+      console.log("Nome não encontrado!");
+}
+*/
+  let caracter = prompt("Digite um caracter:").trim().toLowerCase();
+
+  switch (letra) {
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+      document.write(`<h1>A letra ${letra} é vogal <h1/>`);
+      break;
+
+    default:
+      document.write(`<h1>A letra ${letra} é consoante <h1/>`);
+      break;
   }
-
-  // OUTPUT
 </script>

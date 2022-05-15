@@ -1,25 +1,16 @@
 <script>
   /*
-    17.	Escreva um algoritmo para verificar se um triângulo é Equilátero, Isósceles ou Escaleno.
-
-    Exemplo de entrada: 50, 50, 60
-    Saída Esperada: O triângulo é isósceles.
-
+    18.	Pedrinho tem um cofrinho com muitas moedas, e deseja saber quantos reais conseguiu poupar. Faça um algoritmo para ler a quantidade de cada tipo de moeda, e imprimir o valor total economizado, em reais. Considere que existam moedas de 1, 5, 10, 25 e 50 centavos, e ainda moedas de 1 real. Não havendo moeda de um tipo, a quantidade respectiva é zero.
   */
+  const cofre = [0.01, 0.05, 0.1, 0.25, 0.5, 1.0];
+  let i;
+  let valorPoupado = 0;
 
-  const l1 = parseFloat(prompt("Digite um valor para o lado 01:"));
-  const l2 = parseFloat(prompt("Digite um valor para o lado 02:"));
-  const l3 = parseFloat(prompt("Digite um valor para o lado 03:"));
-
-  if (l1 < l2 + l3 && l2 < l1 + l3 && l3 < l1 + l2) {
-    if (l1 === l2 && l1 === l3) {
-      document.write("Triangulo Equilátero");
-    } else if (l1 === l2 || l1 === l3 || l2 === l3) {
-      document.write("Triangulo Isósceles");
-    } else {
-      document.write("Triangulo Escaleno");
-    }
-  } else {
-    document.write("Não é triângulo");
+  for (i = 0; i < cofre.length; i++) {
+    valorPoupado += cofre[i];
   }
+
+  document.write(
+    `<h1>O valor poupado foi de ${valorPoupado.toFixed(2)} ✌🏻✌🏻✌🏻</h1>`
+  );
 </script>

@@ -1,31 +1,37 @@
 <script>
   /*
-  Escreva um programa para verificar se um caractere é uma vogal ou consoante.
+    14.	Implemente um programa tomador de decisão que considera as seguintes opções para determinar se o usuário usará a fila preferencial ou a fila comum.
 
-  switch(nome) {
+    O programa recebe como entrada a Idade, Sexo e a condição especial do usuário, se houver.
 
-  case "Matheus":
-  case "João":
-  case "Maria":
-      console.log("Olá pessoa");
-    break;
-  default:
-      console.log("Nome não encontrado!");
-}
-*/
-  let letra = prompt("Digite um caractere");
+    Exemplo de entrada: 22, mulher, grávida
+    Saída esperada: Fila preferencial
 
-  switch (letra) {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-      document.write(`<h1>A letra ${letra} é vogal <h1/>`);
-      break;
+  */
 
-    default:
-      document.write(`<h1>A letra ${letra} é consoante <h1/>`);
-      break;
+  const idade = parseInt(prompt("Digite sua idade: "));
+  const sexo = prompt("Digite seu sexo: ");
+  const condicao = prompt(
+    "Tem alguma sua condição especial? Caso tenha, diga qual(gestante ou deficiente)"
+  );
+
+  // if (
+  //   idade >= 60 ||
+  //   (condicao === "feminino" && condicao === "gestante") ||
+  //   condicao === "deficiente"
+  // ) {
+  //   document.write(`FILA PREFERENCIAL`);
+  // } else {
+  //   document.write(`FILA NORMAL`);
+  // }
+
+  if (idade >= 60) {
+    document.write(`VOCÊ É IDOSO, FILA PREFERENCIAL`);
+  } else if (condicao === "deficiente") {
+    document.write(`VOCÊ É DEFICIENTE, FILA PREFERENCIAL`);
+  } else if (sexo === "feminino" && condicao === "gestante") {
+    document.write(`VOCÊ É GESTANTE, FILA PREFERENCIAL`);
+  } else {
+    document.write(`VOCÊ NÃO TEM NENHUMA CONDIÇÃO ESPECIAL, FILA NORMAL`);
   }
 </script>

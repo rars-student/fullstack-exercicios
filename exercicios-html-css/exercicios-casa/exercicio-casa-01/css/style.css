@@ -1,0 +1,109 @@
+/*Fonte Ubuntu */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "ubuntu", sans-serif;
+  color: #212121;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #0063c4 url("../assets/paisagem.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: none;
+  /* color: white;
+  text-align: center; */
+}
+
+section.card-perfil {
+  background-color: #000000a8;
+  border-radius: 10px;
+  padding: 15px;
+  width: 350px;
+  /* margin: auto; */
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px #000000b6;
+}
+
+section.card-perfil {
+  display: block;
+  padding: 80px 0px;
+}
+
+section.card-perfil div.row {
+  text-align: center;
+}
+
+section.card-perfil img#img-perfil {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+section.card-perfil h2#nome {
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+}
+
+section.card-perfil p#profissao {
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  color: #fffb00;
+}
+
+.card-perfil .fab {
+  margin: 35px 5px;
+  font-size: 1.4em;
+  color: #bdbdbd;
+  transition-duration: 0.3s;
+}
+
+.card-perfil .fab:hover {
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+.card-perfil .btn-mais {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  color: #bdbdbd;
+  text-decoration: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+
+.card-perfil .btn-mais:hover {
+  background-color: #ff9900;
+  color: #000;
+  border: 2px solid #FFF;
+}
+
+footer#footer p{
+  color: #FFF;
+  font-style: italic;
+  margin-top: 100px;
+}

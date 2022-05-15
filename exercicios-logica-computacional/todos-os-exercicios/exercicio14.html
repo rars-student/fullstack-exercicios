@@ -1,37 +1,21 @@
 <script>
   /*
-    14.	Implemente um programa tomador de decisão que considera as seguintes opções para determinar se o usuário usará a fila preferencial ou a fila comum.
+    15.	Escreva um algoritmo que mostre os números ímpares de 1 até n
 
-    O programa recebe como entrada a Idade, Sexo e a condição especial do usuário, se houver.
-
-    Exemplo de entrada: 22, mulher, grávida
-    Saída esperada: Fila preferencial
-
+    Exemplo de entrada: 20
+    Saída esperada: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
   */
 
-  const idade = parseInt(prompt("Digite sua idade: "));
-  const sexo = prompt("Digite seu sexo: ");
-  const condicao = prompt(
-    "Tem alguma sua condição especial? Caso tenha, diga qual(gestante ou deficiente)"
-  );
+  const numero = parseInt(prompt("Digite um número maior que zero: "));
+  let i;
 
-  // if (
-  //   idade >= 60 ||
-  //   (condicao === "feminino" && condicao === "gestante") ||
-  //   condicao === "deficiente"
-  // ) {
-  //   document.write(`FILA PREFERENCIAL`);
-  // } else {
-  //   document.write(`FILA NORMAL`);
-  // }
-
-  if (idade >= 60) {
-    document.write(`VOCÊ É IDOSO, FILA PREFERENCIAL`);
-  } else if (condicao === "deficiente") {
-    document.write(`VOCÊ É DEFICIENTE, FILA PREFERENCIAL`);
-  } else if (sexo === "feminino" && condicao === "gestante") {
-    document.write(`VOCÊ É GESTANTE, FILA PREFERENCIAL`);
+  if (numero != 0) {
+    for (i = 1; i < numero; i++) {
+      if (i % 2 === 1) {
+        document.write(`<h1>${i}</h1>`);
+      }
+    }
   } else {
-    document.write(`VOCÊ NÃO TEM NENHUMA CONDIÇÃO ESPECIAL, FILA NORMAL`);
+    document.write("<h1>Valor errado</h1>");
   }
 </script>

@@ -1,16 +1,17 @@
 <script>
   /*
-  O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.
+  Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.
   */
 
   // INPUT
-  const custoCarroFabrica = parseFloat(prompt("Qual o custo de fábrica do carro? "));
-  const percentualDistribuidor = 28/100;
-  const impostos = 45/100;
+  const salarioMes = parseFloat(prompt("Qual o seu salário mensal?"));
+  const percentualReajuste = parseFloat(
+    prompt("Qual o percentual de reajuste?")
+  );
 
-  let custoCarro =+ (custoCarroFabrica * percentualDistribuidor) + (custoCarroFabrica * percentualDistribuidor) + impostos;
-  // CODE
+  let novoSalario =+ (salarioMes * percentualReajuste) / 100;
 
-  document.write(` ${ custoCarro }`);
+  document.write(` ${novoSalario}`);
   // OUTPUT
 </script>
+

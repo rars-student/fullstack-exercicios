@@ -1,20 +1,20 @@
 <script>
   /*
-  Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius (baseado na fórmula abaixo):
-
-  C/5 = (F - 32)/9
-
-  Observação: Para testar se a sua resposta está correta saiba que 100ºC = 212F
+  Leia 5 valores reais e calcule seu somatório utilizando a instrução while.
   */
 
-  // INPUT
-  let fahrenheit = parseFloat(
-    prompt("Qual o valor da temperatura em Fahrenheit")
-  );
-  let celsius = 5 * (fahrenheit - 32) / 9;
+  //Array de valores
+  let valores = [];
+  let i = 1;
+  let valorTotal = 0;
 
-  // CODE
+  //Laço que percorre o array de valores
+  while (i <= 5) {
+    valores[i] = parseFloat(prompt(`Digite o valor ${i}: `));
+    valorTotal += valores[i];
+    i++;
+  }
 
-  document.write(`<h1>Valor em Celsius: ${celsius}° <h2/>`);
-  // OUTPUT
+  //Output
+  document.write(`<h2>A soma dos valores digitados foram: ${valorTotal}<h2/>`);
 </script>

@@ -1,75 +1,39 @@
 <script>
-  // 25.	Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a data por extenso. Dica: use a função “split” de uma string que quebra a string em pedaços dado um separador como argumento da função. Nesse caso, o separador é a barra (/) da data.
-  // Entrada -> “22/04/1983”
-  // Saída esperada -> “22 de abril de 1983”.
+  /*
+    Faça um programa que recebe três números do usuário, e identifica o maior através de uma função e o menor número através de outra função.
+  */
+  let num1 = parseFloat(prompt("Digite o primeiro número:"));
+  let num2 = parseFloat(prompt("Digite o segundo número:"));
+  let num3 = parseFloat(prompt("Digite o terceiro número:"));
 
-  let data = prompt("Digite uma data: ");
-  let dataDividida = data.split("/");
-  let mes;
+  let nums = [num1, num2, num3];
 
-  switch (dataDividida[1]) {
-    case "01":
-      mes = "Janeiro";
-      totalDias = 30;
-      break;
+  function retornaMenorNumero(array) {
+    let menor = array[0];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] < menor) {
+        menor = array[i];
+      }
+    }
 
-    case "02":
-      mes = "Fevereiro";
-      totalDias = 28;
-      break;
-    case "03":
-      mes = "Março";
-      totalDias = 31;
-      break;
-    case "04":
-      mes = "Abril";
-      totalDias = 30;
-      break;
-
-    case "05":
-      mes = "Maio";
-      totalDias = 31;
-      break;
-
-    case "06":
-      mes = "Junho";
-      totalDias = 3;
-      break;
-
-    case "07":
-      mes = "Julho";
-      totalDias = 3;
-      break;
-
-    case "08":
-      mes = "Agosto";
-      totalDias = 3;
-      break;
-
-    case "09":
-      mes = "Setembro";
-      totalDias = 3;
-      break;
-
-    case "10":
-      mes = "Outubro";
-      totalDias = 3;
-      break;
-
-    case "11":
-      mes = "Novembro";
-      totalDias = 3;
-      break;
-
-    case "12":
-      mes = "Dezembro";
-      totalDias = 3;
-      break;
-
-    default:
-      mes = "SEM MES";
-      break;
+    return menor;
   }
 
-  document.write(`<h1>${mes}</h1>`);
+  function retornaMaiorNumero(array) {
+    let maior = array[0];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] > maior) {
+        maior = array[i];
+      }
+    }
+
+    return maior;
+  }
+
+  let menorNumero = retornaMaiorNumero(nums);
+  let maiorNumero = retornaMenorNumero(nums);
+
+  document.write(
+    `<h1> O menor número é ${maiorNumero} e o maior número é ${menorNumero}</h1>`
+  );
 </script>

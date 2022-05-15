@@ -1,21 +1,18 @@
 <script>
-  /*
-    19.	Faça um programa, com uma função que necessite de um argumento. A função retorna o valor de caractere ‘P’, se seu argumento for positivo, e ‘N’, se seu argumento for zero ou negativo
-  */
+  //  20.	Faça um programa com uma função chamada calculaImposto. A função possui dois parâmetros formais: valor e taxaImposto. A função deve retornar o valor com seu imposto calculado.
 
-  const valor = parseInt(prompt("Digite um valor numérico "));
+  // Entrada -> calculaImposto(1000, 10)
+  // Saída esperada -> 1100.
 
-  const verificarPositivoNegativo = (value) => {
-    if (value > 0) {
-      return "P";
-    } else if (value <= 0) {
-      return "N";
-    } else {
-      return "Valor inválido";
-    }
-  };
+  const valor = parseFloat(prompt("Digite um valor inicial: "));
+  const taxaImposto = parseFloat(prompt("Qual a taxa de imposto? "));
 
-  const positivoNegativo = verificarPositivoNegativo(valor);
+  const calcularImposto = (value, tax) => value + value * (tax / 100);
 
-  document.write(`<h1>${positivoNegativo}</h1>`);
+  document.write(
+    `<h1>O valor com o imposto calculado é: ${calcularImposto(
+      valor,
+      taxaImposto
+    )}</h1>`
+  );
 </script>

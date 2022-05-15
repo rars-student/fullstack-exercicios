@@ -1,29 +1,26 @@
 <script>
-  // 23.	Crie uma função que recebe um inteiro positivo e teste para saber se ele é primo ou não.
-  // Faça uma função que recebe um inteiro n e mostra todos os primos, de 1 até n.
+  /*
+    Um número é dito perfeito quando ele é igual a soma de seus fatores. Por exemplo, os fatores de 6 são 1, 2 e 3 (ou seja, podemos dividir 6 por 1, por 2 e por 3) e 6=1+2+3, logo 6 é um número perfeito. Escreva uma função que recebe um inteiro e dizer se é perfeito ou não. Em outra função, peça um inteiro n e mostre todos os números perfeitos até n.
+  */
 
-  // Entrada -> veririficaNumeroPrimo(3), imprimeNumerosPrimosAteN(13)
-  // Saída esperada -> “É número primo”, “2, 3, 5, 7, 11, 13.
-
-  const valor = parseInt(prompt("Digite um valor limite: "));
-
-  const verificarSeEPrimo = (value) => {
-    let valores = [];
-    for (var i = 0; i <= value; i++) {
-      if (ePrimo(i)) {
-        valores.push(i);
+  function veririficarNumeroPerfeito(numero) {
+    let soma = 0;
+    for (let i = 1; i < numero; i++) {
+      if (!(numero % i)) {
+        soma += i;
       }
     }
-    return valores;
-  };
 
-  const ePrimo = (value) => {
-    for (let i = 2; i < value; i++)
-      if (value % i === 0) {
-        return false;
+    return soma == numero;
+  }
+
+  function imprimirNumerosPerfeitosAteN(numero) {
+    for (let i = 1; i <= numero; i++) {
+      if (veririficarNumeroPerfeito(i) == true) {
+        document.write(`<h1>${i}</h1>`);
       }
-    return value > 1;
-  };
+    }
+  }
 
-  document.write(`<h1>${verificarSeEPrimo(valor)}</h1>`);
+  imprimirNumerosPerfeitosAteN(10000);
 </script>
