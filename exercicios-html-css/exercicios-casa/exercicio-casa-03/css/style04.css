@@ -32,16 +32,23 @@ div.main-div {
 }
 
 div.main-div div.row {
-  width: 20vw;
-  height: 30px;
+  width: 40vw;
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(194, 194, 194);
 }
 
 div.main-div div.row div {
-  width: 20vw;
-  width: 12px;
-  height: 12px;
   background-color: yellow;
+}
+
+div.main-div div.row div.cima {
+  padding: 30px;
+}
+
+div.main-div div.row div.baixo {
+  width: 100vw;
+  padding: 30px;
 }
