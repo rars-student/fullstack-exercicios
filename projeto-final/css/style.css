@@ -28,3 +28,14 @@ main#main div.jumbotron-bottom {
   margin-top: 50px;
   text-align: center;
 }
+
+footer#footer {
+  background-color: #323232;
+  color: white;
+  padding: 10px 0;
+}
+
+footer#footer p {
+  text-align: center;
+  font-weight: 600;
+}
