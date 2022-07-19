@@ -11,6 +11,10 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+nav#main-menu.navbar.navbar-expand-lg {
+  background-color: rgba(31, 31, 31, 0.856);
+}
+
 nav#main-menu a.logo img {
   width: 150px;
 }
