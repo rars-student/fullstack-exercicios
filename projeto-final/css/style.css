@@ -43,6 +43,7 @@ main#main div.jumbotron-bottom {
   margin-top: 50px;
   background: #727272 url("../assets/img/jumbotron/2020-porsche-taycan.webp")
     no-repeat center fixed;
+  background-size: cover;
   color: #ffff;
   text-align: center;
   border-top: 3px solid #ff9900;
