@@ -49,9 +49,14 @@ main#main div.jumbotron-bottom {
   border-top: 3px solid #ff9900;
 }
 
-.contact-us {
-
+div#cards div.col div.card-body h5.card-title {
+  text-transform: uppercase;
+  font-weight: 500;
 }
+
+/* .contact-us {
+
+} */
 
 .btn-enviar {
   width: 100%;
