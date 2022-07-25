@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="home">
   <nav id="main-menu" class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -92,7 +92,7 @@
   </header>
 
   <main id="main">
-    <div class="jumbotron-top jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid general-jumbotron">
       <div class="container">
         <i class="fa fa-camera-retro"></i>
         <h1 class="display-4">Fluid jumbotron</h1>
@@ -133,55 +133,43 @@
       </div>
     </div>
 
-    <div class="jumbotron-bottom jumbotron jumbotron-fluid">
-      <div class="jumbotron-filtro">
-        <div class="container">
-
-          <section class="mb-4">
-
-            <h1 class="display-4">Fale Conosco</h1>
-            <p class="lead">Entre em contato conosco e agende uma visita</p>
-
-            <div class="row">
-              <div class="col-12">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-
-                  <div class="row">
-
-
-                    <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        <input type="text" id="name" name="name" class="form-control">
-                        <label for="name" class="">Seu nome</label>
+    <div class="contact-us-area">
+      <div class="jumbotron jumbotron-fluid general-jumbotron jumbotron-contact-us">
+          <div class="container">
+            <section class="mb-4">
+              <h1 class="display-4">Fale Conosco</h1>
+              <p class="lead">Entre em contato conosco e agende uma visita</p>
+              <div class="row">
+                <div class="col-12">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Seu nome</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Seu Email</label>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        <input type="text" id="email" name="email" class="form-control">
-                        <label for="email" class="">Seu Email</label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Mensagem</label>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="md-form mb-0">
-                        <input type="text" id="subject" name="subject" class="form-control">
-                        <label for="subject" class="">Mensagem</label>
-                      </div>
-                    </div>
-                  </div>
-
-                </form>
-                <button class="btn btn-danger btn-enviar">ENVIAR</button>
+                  </form>
+                  <button class="btn btn-danger btn-enviar">ENVIAR</button>
+                </div>
               </div>
-            </div>
-
-          </section>
-        </div>
-
+            </section>
+          </div>
       </div>
     </div>
   </main>

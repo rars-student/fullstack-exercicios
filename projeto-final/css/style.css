@@ -15,6 +15,10 @@ nav#main-menu.navbar.navbar-expand-lg {
   background-color: rgba(31, 31, 31, 0.856);
 }
 
+.all-pages nav#main-menu.navbar.navbar-expand-lg {
+  background-color: #323232;
+}
+
 nav#main-menu a.logo img {
   width: 150px;
 }
@@ -25,38 +29,50 @@ main#main {
   background-size: cover;
 }
 
-main#main div.jumbotron-top {
-  background-color: rgb(235, 235, 235);
-  padding: 100px 0;
-  margin-bottom: 50px;
-  text-align: center;
+.all-pages main#main {
+  background: #323232;
+  margin-top: 65px;
 }
 
-.jumbotron-filtro {
+.general-jumbotron {
+  padding: 100px 0;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+}
+
+/* .jumbotron-filtro {
   width: 100%;
   height: 100%;
   padding: 100px;
   background-color: rgba(22, 22, 22, 0.902);
+} */
+
+main#main div.contact-us-area {
+  background: rgba(22, 22, 22, 0.902)
+    url("../assets/img/jumbotron/2020-porsche-taycan.webp") no-repeat center
+    fixed;
+  background-size: cover;
 }
 
-main#main div.jumbotron-bottom {
-  margin-top: 50px;
-  background: #727272 url("../assets/img/jumbotron/2020-porsche-taycan.webp")
-    no-repeat center fixed;
-  background-size: cover;
+main#main div.jumbotron-contact-us {
+  background-color: rgba(22, 22, 22, 0.902);
   color: #ffff;
   text-align: center;
   border-top: 3px solid #ff9900;
+}
+
+body#contact-us main#main div.jumbotron-contact-us {
+  padding: 180px;
+}
+
+div#cards {
+  padding: 150px 0;
 }
 
 div#cards div.col div.card-body h5.card-title {
   text-transform: uppercase;
   font-weight: 500;
 }
-
-/* .contact-us {
-
-} */
 
 .btn-enviar {
   width: 100%;

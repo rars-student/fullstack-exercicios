@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body id="contact-us" class="all-pages">
   <nav id="main-menu" class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -28,13 +28,13 @@
         <a class="logo navbar-brand" href="../index.html"><img src="../assets/img/auto-cars-logo.png" alt="logo"></a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./sobre.html">Sobre</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="./fale-conosco.html">Fale Conosco</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -45,9 +45,61 @@
     </div>
   </nav>
 
-  <main id="main">
-    <div class="container">
-      <h1>Fale Conosco</h1>
+  <main id="main" class="all-pages">
+    <div class="jumbotron jumbotron-fluid general-jumbotron">
+      <div class="container">
+        <i class="fa fa-camera-retro"></i>
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="contact-us-area">
+      <div class="jumbotron jumbotron-fluid general-jumbotron jumbotron-contact-us">
+        <div class="container">
+          <section>
+            <h1 class="display-4">Fale Conosco</h1>
+            <p class="lead">Entre em contato conosco e agende uma visita</p>
+            <div class="row">
+              <div class="col-12">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Seu nome</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Seu Email</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Mensagem</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <button class="btn btn-danger btn-enviar">ENVIAR</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid general-jumbotron">
+      <div class="container">
+        <i class="fa fa-camera-retro"></i>
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
     </div>
   </main>
 
